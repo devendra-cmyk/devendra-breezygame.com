@@ -14,7 +14,15 @@ import {
 import { nativeFunctionMatchingSchema } from "../domain/native/functionMatching.js";
 import { nativeByteReadSchema } from "../domain/native/nativeByteRead.js";
 import { analysisDetailOutputSchemaOf } from "./analysisDetail.js";
-import { functionDossierSchema } from "../domain/hopperValues.js";
+import {
+  functionDossierSchema,
+  analysisBookmarkSchema,
+  functionInstructionWindowSchema,
+  referenceEdgeSchema,
+  unresolvedCallSchema,
+  procedureIdentitySchema,
+  containingProcedureResolutionSchema,
+} from "../domain/hopperValues.js";
 import { nativeInventoryRowsSchemas } from "../domain/native/nativeInventory.js";
 import { z } from "zod";
 import { byteSearchResultSchema } from "../domain/native/bytePattern.js";
@@ -43,14 +51,6 @@ import { residualUnknownSchema } from "../domain/residualUnknown.js";
 import { evidenceBundleSchema } from "../domain/evidenceBundle.js";
 
 import { processCaptureComparisonSchema } from "../domain/process/processComparison.js";
-import {
-  analysisBookmarkSchema,
-  functionInstructionWindowSchema,
-  referenceEdgeSchema,
-  unresolvedCallSchema,
-  procedureIdentitySchema,
-  containingProcedureResolutionSchema,
-} from "../domain/hopperValues.js";
 import { nativeApiInspectionResultSchema } from "../domain/native/nativeApiBoundary.js";
 import {
   demangleSwiftSchema,
