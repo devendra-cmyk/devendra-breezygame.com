@@ -1,5 +1,36 @@
 # Changelog
 
+## [6.9.0](https://github.com/morluto/rea/compare/rea-agents-6.8.0...rea-agents-6.9.0) (2026-10-25)
+
+
+### ⚠ BREAKING CHANGES
+
+* **mcp:** binary_session {} no longer returns analysis_provider_candidates[].availability.diagnostics, target_support.diagnostics or capabilities, or tool_availability group surface, effects and annotations. Pass {"detail": "complete"} to get them.
+
+### Features
+
+* **browser:** retain compact scenario summaries and selected views ([#7120](https://github.com/morluto/rea/issues/7120)) ([fc43e28](https://github.com/morluto/rea/commit/fc43e285eaae2155d32e2ca0ab5d2181a4e2f1b5))
+
+
+### Bug Fixes
+
+* **artifacts:** admit raw UDRW disk images ([#7106](https://github.com/morluto/rea/issues/7106)) ([0eb3919](https://github.com/morluto/rea/commit/0eb3919d69c98f9f31b3b8b2ee5d389c3df6e828))
+* **cli:** report JSON Lines selection refusals as caller errors ([#7124](https://github.com/morluto/rea/issues/7124)) ([e06be06](https://github.com/morluto/rea/commit/e06be06530fc214e25f25f357a78d3619f75dd35))
+* **javascript:** bind defaulted and destructured Webpack factory roles ([#7117](https://github.com/morluto/rea/issues/7117)) ([aa79f59](https://github.com/morluto/rea/commit/aa79f59478c6a912823d18136d2e116a60f43bcd))
+* **javascript:** evaluate each short-circuit left operand once ([#7126](https://github.com/morluto/rea/issues/7126)) ([81afb04](https://github.com/morluto/rea/commit/81afb043f781676a15f0ce511c7784180e2224f7)), closes [#7115](https://github.com/morluto/rea/issues/7115)
+* **javascript:** stop recording replaced slot values as store receivers ([#7128](https://github.com/morluto/rea/issues/7128)) ([70b96b6](https://github.com/morluto/rea/commit/70b96b65d9a72296c7e427525e5c33da7bf3ec06))
+* **lldb:** keep the bridge's no-target proof through interruption ([#7111](https://github.com/morluto/rea/issues/7111)) ([d32d9f2](https://github.com/morluto/rea/commit/d32d9f29020e54b684dcf1a0f39c5b4d9e8637ce)), closes [#5385](https://github.com/morluto/rea/issues/5385)
+* **macho:** derive the runtime name of each Mach-O symbol ([#7105](https://github.com/morluto/rea/issues/7105)) ([a8e5eaf](https://github.com/morluto/rea/commit/a8e5eaf1aa93a2611d1fa4c9b24c807f941e51c6)), closes [#5298](https://github.com/morluto/rea/issues/5298)
+* **mcp:** advertise reduced array elements with Gemini-compatible item types ([#7107](https://github.com/morluto/rea/issues/7107)) ([58a5275](https://github.com/morluto/rea/commit/58a5275aa2247b961cb249ccbe4a98adbb706934)), closes [#5201](https://github.com/morluto/rea/issues/5201)
+* **mcp:** fit every advertised input schema within the 64 KiB client limit ([#7119](https://github.com/morluto/rea/issues/7119)) ([7336a56](https://github.com/morluto/rea/commit/7336a566ace2f9d1412f78b0c56c2651b9b169cd))
+* **mcp:** return a compact binary_session status by default ([#7127](https://github.com/morluto/rea/issues/7127)) ([5a22ae6](https://github.com/morluto/rea/commit/5a22ae6bc8bae6cadd25aa5a6635a3c219d17b82))
+* **release:** reject missing manifest release boundaries ([bc14312](https://github.com/morluto/rea/commit/bc143125edd223b7e0d315d5ea7efdc270c29f9e))
+
+
+### Performance Improvements
+
+* **native:** charge function matching for the copies it makes ([#7108](https://github.com/morluto/rea/issues/7108)) ([cc2656b](https://github.com/morluto/rea/commit/cc2656be8d8ff335283cc3d43910ca85ce519d29))
+
 ## [6.8.0](https://github.com/morluto/rea/compare/rea-agents-6.7.0...rea-agents-6.8.0) (2026-10-25)
 
 ### Highlights
